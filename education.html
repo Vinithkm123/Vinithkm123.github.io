@@ -1,0 +1,161 @@
+<header class="main-header">
+
+    <h1 class="site-title">VKM</h1>
+<div class="nav-container">
+    
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">My Story</a></li>
+            <li><a href="skills.html">My Skillset</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="education.html"class="active">Education Journey</a></li>
+            <li><a href="certificates.html">Achievements & Certificates</a></li>
+            <li><a href="work.html">Industry Experience</a></li>
+        </ul>
+    </nav>
+
+    <!-- CV Button FRST -->
+    <a href="PDFs/VINITH K M  - ENG22DS0023.pdf" class="cv-btn" id="download CV">Download CV</a>
+
+    <!-- Social Icons SECOND (after CV) -->
+    <div class="header-socials">
+        <a href="https://www.linkedin.com/in/vinith-k-m?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+            <img src="images/linkdin.png" class="icon">
+        </a>
+
+        <a href="https://github.com/Vinithkm123" target="_blank">
+            <img src="images/Github.png" class="icon">
+        </a>
+
+        <a href="https://www.instagram.com/mr_perfect_vini_05?igsh=MTJqa3Y0ZjNnNGR2eA==" target="_blank">
+            <img src="images/insta.png" class="icon">
+        </a>
+    </div>
+
+</div>
+
+</header>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vinith K M | education</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<section class="education-heading">
+    <h2>My Education</h2>
+    <p>A journey built on discipline, foundations, and continuous learning.</p>
+</section>
+
+
+<section class="education-section" id="education">
+  <div class="container">
+
+    <div class="education-grid">
+
+      <!-- B.Tech Card -->
+      <a href="https://www.dsu.edu.in" target="_blank" class="edu-card">
+        <img src="images/DSU Logo.jpg" alt="Dayananda Sagar University" class="edu-img">
+
+        <div class="edu-content">
+          <div class="edu-head">
+            <h3>B.Tech — Computer Science Engineering (Data Science)</h3>
+            <span class="edu-date">2022 – 2026</span>
+          </div>
+          <p class="edu-school">Dayananda Sagar University — School of Engineering, Bengaluru</p>
+
+          <ul class="edu-points">
+            <li>Specialised in Data Science, Machine Learning, and Data Analysis.</li>
+            <li>Worked on Brain Tumor & Alzheimer’s Detection using CNNs with automated report generation.</li>
+          </ul>
+        </div>
+      </a>
+
+      <!-- Diploma Card -->
+      <a href="https://schools.org.in/mysuru/29260607203/st-anthony-composite-pu-college-dornahalli.html" target="_blank" class="edu-card">
+        <img src="images/My clg.jpeg" alt="SCT Polytechnic" class="edu-img">
+
+        <div class="edu-content">
+          <div class="edu-head">
+            <h3>Pre University — PCMB</h3>
+            <span class="edu-date">2020 – 2022</span>
+          </div>
+          <p class="edu-school">St. Anthony’s Composite PU College, Mysore</p>
+
+          <ul class="edu-ppoints">
+            <li>Percentage: 92.83%</li>
+            <li>Focused on foundational subjects supporting Data Science & Engineering.</li>
+          </ul>
+        </div>
+      </a>
+
+      <!-- SSLC Card -->
+      <a href="https://www.google.com/maps/dir/304,+2nd+Cross+Rd,+Nagappareddy+Layout,+Vignan+Nagar,+Doddanekundi,+Kaggadasapura,+Bengaluru,+Karnataka+560037,+India/C9CP%2B5CM,+Kalenahalli+Rd,+Krishnarajanagara,+Karnataka+571602/@12.4199981,76.3803557,15.03z/data=!4m13!4m12!1m5!1m1!1s0x3bae11660e828229:0x9fb5bda29f3cc99d!2m2!1d77.6814851!2d12.9815791!1m5!1m1!1s0x3ba5819234c6b073:0xc2e5667002bce35f!2m2!1d76.3860519!2d12.4204532?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D" target="_blank" class="edu-card">
+        <img src="images/My school.jpeg" alt="Adarsha Vidyalaya School" class="edu-img">
+
+        <div class="edu-content">
+          <div class="edu-head">
+            <h3>SSLC — Secondary School Leaving Certificate</h3>
+            <span class="edu-date">2019 – 2020</span>
+          </div>
+          <p class="edu-school">Adarsha Vidyalaya School, Mysore</p>
+
+          <ul class="edu-points">
+            <li>Percentage: 78.24%</li>
+            <li>Strong academic foundation & extracurricular participation.</li>
+          </ul>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+<script>
+document.getElementById("download CV").addEventListener("click", function(event) {
+    event.preventDefault(); // stop auto-download
+
+    // Step 1 → Ask confirmation
+    let confirmDownload = confirm("Do you want to download the CV of Vinith K M?");
+
+    if (confirmDownload) {
+        // Step 2 → Start download
+        const link = document.createElement('a');
+        link.href = "PDFs/VINITH K M  - ENG22DS0023.pdf";
+        link.download = "PDFs/VINITH K M CV.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+        // Step 3 → Success message
+        alert("CV downloaded successfully!");
+    }
+});
+</script>
+</body>
+
+<footer>
+
+    <div class="contact-links">
+    <span>Contact Me - </span>
+        <a class="contact-item" href="mailto:vinithkm0@gmail.com"target="_blank">
+            <img src="images/mail.png" class="icon">
+            <span>vinithkm0@gmail.com</span>
+        </a>
+
+        <a class="contact-item" href="tel:+917975054260">
+            <img src="images/phone.png" class="icon"target="_blank">
+            <span>+91 8147329909</span>
+        </a>
+
+         <a class="contact-item" href="https://www.google.com/maps/place/Mysuru,+Karnataka/@12.3106334,76.5532875,12z/data=!3m1!4b1!4m6!3m5!1s0x3baf70381d572ef9:0x2b89ece8c0f8396d!8m2!3d12.2958104!4d76.6393805!16zL20vMGo2MDM?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"target="_blank">
+            <img src="images/Location.png" class="icon">
+            <span>Mysore, Karnataka</span>
+        </a>
+    </div>
+    <p class="copyright">© Vinith K M. Last Updated: December 12 2025</p>
+</footer>
+
+
+</html>

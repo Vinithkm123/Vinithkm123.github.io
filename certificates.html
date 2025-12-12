@@ -1,0 +1,179 @@
+<header class="main-header">
+
+    <h1 class="site-title">VKM</h1>
+<div class="nav-container">
+    
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">My Story</a></li>
+            <li><a href="skills.html">My Skillset</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="education.html">Education Journey</a></li>
+            <li><a href="certificates.html"class="active">Achievements & Certificates</a></li>
+            <li><a href="work.html">Industry Experience</a></li>
+        </ul>
+    </nav>
+
+    <!-- CV Button FRST -->
+    <a href="PDFs/VINITH K M  - ENG22DS0023.pdf" class="cv-btn" id="download CV">Download CV</a>
+
+    <!-- Social Icons SECOND (after CV) -->
+    <div class="header-socials">
+        <a href="https://www.linkedin.com/in/vinith-k-m?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+            <img src="images/linkdin.png" class="icon">
+        </a>
+
+        <a href="https://github.com/Vinithkm123" target="_blank">
+            <img src="images/Github.png" class="icon">
+        </a>
+
+        <a href="https://www.instagram.com/mr_perfect_vini_05?igsh=MTJqa3Y0ZjNnNGR2eA==" target="_blank">
+            <img src="images/insta.png" class="icon">
+        </a>
+    </div>
+
+</div>
+
+</header>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vinith K M | Certificates</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<section class="certifications-heading">
+    <h2>My Certifications</h2>
+    <p>Courses and programs that strengthened my technical expertise and practical skills.</p>
+</section>
+
+
+<section class="certificates-section">
+
+    <div class="cert-list">
+
+        <!-- CERTIFICATE 1 -->
+
+
+        <!-- CERTIFICATE 2 -->
+        <div class="cert-card-horizontal">
+
+            <a class="cert-img-box" href="https://www.coursera.org/" target="_blank">
+                <img src="images/Coursera logo.png" alt="">
+            </a>
+
+            <div class="cert-info">
+                <div class="cert-text">
+                    <h3>Coursera – Online Courses</h3>
+                    <ul class="cert-learned">
+                        <li>Math Works</li>
+                    </ul>
+                </div>
+
+                <a class="view-cert-btn" href="PDFs/Coursera math works.jpeg" target="_blank">
+                    View certificates
+                </a>
+            </div>
+
+        </div>
+
+        <!-- CERTIFICATE 3 -->
+        <div class="cert-card-horizontal">
+
+            <a class="cert-img-box" href="https://infyspringboard.onwingspan.com/web/en/login" target="_blank">
+                <img src="images/insys logo.png" alt="">
+            </a>
+
+            <div class="cert-info">
+                <div class="cert-text">
+                    <h3>Infosys Springboard – Online Courses</h3>
+                    <ul class="cert-learned">
+                        <li>Full stack Development</li>
+                        <li>Machine Learning Fundamentals</li>
+                        <li>Secure Data Access</li>
+                        <li>Big Data</li>
+                    </ul>
+                </div>
+
+                <a class="view-cert-btn" href="PDFs/Full Infoys.pdf" target="_blank">
+                    View Certificates
+                </a>
+            </div>
+
+        </div>
+
+        <!-- CERTIFICATE 4 -->
+        <div class="cert-card-horizontal">
+
+            <a class="cert-img-box" href="https://www.instagram.com/mr_perfect_vini_05?igsh=MTJqa3Y0ZjNnNGR2eA==" target="_blank">
+                <img src="images/Poetry.jpg" alt="">
+            </a>
+
+            <div class="cert-info">
+                <div class="cert-text">
+                    <h3>Co-Curricular & Extracurricular Achievements</h3>
+                    <ul class="cert-learned">
+                        <li>Involved in cultural and artistic activities such as singing and stage performances.</li>
+                    </ul>
+                </div>
+
+                <a class="view-cert-btn" href="PDFs/Extras.pdf" target="_blank">
+                    View Certificate
+                </a>
+            </div>
+
+        </div>
+
+    </div> <!-- END cert-list -->
+
+</section>
+
+<script>
+document.getElementById("download CV").addEventListener("click", function(event) {
+    event.preventDefault(); // stop auto-download
+
+    // Step 1 → Ask confirmation
+    let confirmDownload = confirm("Do you want to download the CV of Vinith K M?");
+
+    if (confirmDownload) {
+        // Step 2 → Start download
+        const link = document.createElement('a');
+        link.href = "PDFs/VINITH K M  - ENG22DS0023.pdf";
+        link.download = "PDFs/VINITH K M CV.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+        // Step 3 → Success message
+        alert("CV downloaded successfully!");
+    }
+});
+</script>
+</body>
+
+<footer>
+
+    <div class="contact-links">
+    <span>Contact Me - </span>
+        <a class="contact-item" href="mailto:vinithkm0@gmail.com"target="_blank">
+            <img src="images/mail.png" class="icon">
+            <span>vinithkm0@gmail.com</span>
+        </a>
+
+        <a class="contact-item" href="tel:+917975054260">
+            <img src="images/phone.png" class="icon"target="_blank">
+            <span>+91 8147329909</span>
+        </a>
+
+         <a class="contact-item" href="https://www.google.com/maps/place/Mysuru,+Karnataka/@12.3106334,76.5532875,12z/data=!3m1!4b1!4m6!3m5!1s0x3baf70381d572ef9:0x2b89ece8c0f8396d!8m2!3d12.2958104!4d76.6393805!16zL20vMGo2MDM?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"target="_blank">
+            <img src="images/Location.png" class="icon">
+            <span>Mysore, Karnataka</span>
+        </a>
+    </div>
+    <p class="copyright">© Vinith K M. Last Updated: December 12 2025</p>
+</footer>
+</html>
+
+

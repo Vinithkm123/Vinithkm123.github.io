@@ -1,0 +1,114 @@
+
+<header class="main-header">
+
+    <h1 class="site-title">VKM</h1>
+<div class="nav-container">
+    
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">My Story</a></li>
+            <li><a href="skills.html">My Skillset</a></li>
+            <li><a href="projects.html"class="active">Projects</a></li>
+            <li><a href="education.html">Education Journey</a></li>
+            <li><a href="certificates.html">Achievements & Certificates</a></li>
+            <li><a href="work.html">Industry Experience</a></li>
+        </ul>
+    </nav>
+
+    <!-- CV Button FRST -->
+    <a href="PDFs/VINITH K M  - ENG22DS0023.pdf" class="cv-btn" id="download CV">Download CV</a>
+
+    <!-- Social Icons SECOND (after CV) -->
+    <div class="header-socials">
+        <a href="https://www.linkedin.com/in/vinith-k-m?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+            <img src="images/linkdin.png" class="icon">
+        </a>
+
+        <a href="https://github.com/Vinithkm123" target="_blank">
+            <img src="images/Github.png" class="icon">
+        </a>
+
+        <a href="https://www.instagram.com/mr_perfect_vini_05?igsh=MTJqa3Y0ZjNnNGR2eA==" target="_blank">
+            <img src="images/insta.png" class="icon">
+        </a>
+    </div>
+
+</div>
+
+</header>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vinith K M | projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<section class="projects-heading">
+    <h2>My Projects</h2>
+    <p>Hands-on experience developing real-world solutions using data science techniques, machine learning models, and industry-relevant tools.</p>
+</section>
+
+<div class="projects-container">
+
+    <div class="project-card">
+        <h2>Brain Tumor & Alzheimer’s Detection Using Deep Learning</h2>
+        <p>A deep learning system that analyzes medical images using CNN models, generating automated diagnostic reports. Utilized TensorFlow, OpenCV, and Python to build an end-to-end pipeline for real-world healthcare applications.</p>
+        <a href="https://github.com/Vinithkm123/AI-BASED-DETECTION-OF-ALZHIMERS-AND-BRAIN-TUMOR-DISEASES" class="project-btn">View Details</a>
+    </div>
+
+    <div class="project-card">
+        <h2>Smart Irrigation System Using IoT & Automation</h2>
+        <p>An IoT-based solution designed to monitor soil moisture and automate water supply for efficient irrigation. Uses sensors, microcontrollers, and cloud integration to optimize water usage and support real-time decision-making for agriculture.</p>
+        <a href="https://github.com/Vinithkm123/DL-Project/tree/main" class="project-btn">View Details</a>
+    </div>
+
+</div>
+
+<script>
+document.getElementById("download CV").addEventListener("click", function(event) {
+    event.preventDefault(); // stop auto-download
+
+    // Step 1 → Ask confirmation
+    let confirmDownload = confirm("Do you want to download the CV of Vinith K M?");
+
+    if (confirmDownload) {
+        // Step 2 → Start download
+        const link = document.createElement('a');
+        link.href = "PDFs/VINITH K M  - ENG22DS0023.pdf";
+        link.download = "PDFs/VINITH K M CV.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+        // Step 3 → Success message
+        alert("CV downloaded successfully!");
+    }
+});
+</script>
+</body>
+
+<footer>
+
+    <div class="contact-links">
+    <span>Contact Me - </span>
+        <a class="contact-item" href="mailto:vinithkm0@gmail.com"target="_blank">
+            <img src="images/mail.png" class="icon">
+            <span>vinithkm0@gmail.com</span>
+        </a>
+
+        <a class="contact-item" href="tel:+917975054260">
+            <img src="images/phone.png" class="icon"target="_blank">
+            <span>+91 8147329909</span>
+        </a>
+
+         <a class="contact-item" href="https://www.google.com/maps/place/Mysuru,+Karnataka/@12.3106334,76.5532875,12z/data=!3m1!4b1!4m6!3m5!1s0x3baf70381d572ef9:0x2b89ece8c0f8396d!8m2!3d12.2958104!4d76.6393805!16zL20vMGo2MDM?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"target="_blank">
+            <img src="images/Location.png" class="icon">
+            <span>Mysore, Karnataka</span>
+        </a>
+    </div>
+    <p class="copyright">© Vinith K M. Last Updated: December 12 2025</p>
+</footer>
+
+
+</html>

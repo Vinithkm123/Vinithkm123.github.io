@@ -1,0 +1,136 @@
+<header class="main-header">
+
+    <h1 class="site-title">VKM</h1>
+<div class="nav-container">
+    
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">My Story</a></li>
+            <li><a href="skills.html">My Skillset</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="education.html">Education Journey</a></li>
+            <li><a href="certificates.html">Achievements & Certificates</a></li>
+            <li><a href="work.html">Industry Experience</a></li>
+        </ul>
+    </nav>
+
+    <!-- CV Button FRST -->
+    <a href="PDFs/VINITH K M  - ENG22DS0023.pdf" class="cv-btn" id="download CV">Download CV</a>
+
+    <!-- Social Icons SECOND (after CV) -->
+    <div class="header-socials">
+        <a href="https://www.linkedin.com/in/vinith-k-m?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+            <img src="images/linkdin.png" class="icon">
+        </a>
+
+        <a href="https://github.com/Vinithkm123" target="_blank">
+            <img src="images/Github.png" class="icon">
+        </a>
+
+        <a href="https://www.instagram.com/mr_perfect_vini_05?igsh=MTJqa3Y0ZjNnNGR2eA==" target="_blank">
+            <img src="images/insta.png" class="icon">
+        </a>
+    </div>
+
+</div>
+
+</header>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vinith K M | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="intro-text">
+    <h1>I'm Vinith K M</h1>
+    <p class="sub">B.Tech CSE (Data Science) Student | Data Science & Software Development Enthusiast</p>
+    <p class="sub">Focused on learning practical technologies, building efficient data-driven solutions, and developing reliable software that supports real-world applications.</p>
+</div>
+
+ 
+<div class="page-layout">
+
+    <div class="left-image">
+
+                <section class="hero hero-home">
+
+        <img src="images/my pic.jpeg" alt="Vinith K M">
+    </div>
+
+    <div class="right-content" c>
+
+        <div class="home-wrapper">
+            <div class="card about-card">
+                <h2>About Me</h2>
+                <p>I’m a dedicated B.Tech Computer Science Engineer specializing in Data Science, with a strong foundation in software development, data analysis, and machine learning. I enjoy working on practical, impactful projects—ranging from medical image classification to automated report generation—where I can apply disciplined, hands-on problem-solving.</p>
+
+                <p>My skills cover Python, C, Java, R, SQL, and web technologies, along with tools such as TensorFlow, OpenCV,  and Jupyter Notebooks. I’ve built experience across core areas like DSA, machine learning, data visualization, and database management, allowing me to approach challenges with both technical depth and clarity</p>
+                
+                <p>I’ve also completed structured training in full-stack development, core programming, and data science, supported by certifications from MathWorks, Coursera, and NPTEL. Alongside technical learning, I’ve strengthened my communication and teamwork abilities through professional soft-skills programs.</p>
+                 
+                <p>I’ve completed an IoT industrial internship at Gravity India Pvt. Ltd., where I gained real-world exposure to device integration, sensors, cloud-based monitoring, and industrial workflows.
+                   Alongside academics, I’m pursuing an advanced offline AI/ML program to sharpen my expertise through hands-on projects in statistics, machine learning, and deep learning.</p>   
+            
+                <p>Beyond academics, I enjoy creative work such as product innovation from waste and novel writing, and I stay active through cricket, cycling, and travel. I’m always exploring new ideas, learning consistently, and working toward building reliable, meaningful solutions.</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<script>
+document.getElementById("download CV").addEventListener("click", function(event) {
+    event.preventDefault(); // stop auto-download
+
+    // Step 1 → Ask confirmation
+    let confirmDownload = confirm("Do you want to download the CV of Vinith K M?");
+
+    if (confirmDownload) {
+        // Step 2 → Start download
+        const link = document.createElement('a');
+        link.href = "PDFs/VINITH K M  - ENG22DS0023.pdf";
+        link.download = "PDFs/VINITH K M CV.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+        // Step 3 → Success message
+        alert("CV downloaded successfully!");
+    }
+});
+</script>
+</body>
+
+<footer>
+
+    <div class="contact-links">
+    <span>Contact Me - </span>
+        <a class="contact-item" href="mailto:vinithkm0@gmail.com"target="_blank">
+            <img src="images/mail.png" class="icon">
+            <span>vinithkm0@gmail.com</span>
+        </a>
+
+        <a class="contact-item" href="tel:+917975054260">
+            <img src="images/phone.png" class="icon"target="_blank">
+            <span>+91 8147329909</span>
+        </a>
+
+         <a class="contact-item" href="https://www.google.com/maps/place/Mysuru,+Karnataka/@12.3106334,76.5532875,12z/data=!3m1!4b1!4m6!3m5!1s0x3baf70381d572ef9:0x2b89ece8c0f8396d!8m2!3d12.2958104!4d76.6393805!16zL20vMGo2MDM?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"target="_blank">
+            <img src="images/Location.png" class="icon">
+            <span>Mysore, Karnataka</span>
+        </a>
+    </div>
+    <p class="copyright">© Vinith K M. Last Updated: December 12 2025</p>
+</footer>
+
+
+</html>
+
+
+
+
